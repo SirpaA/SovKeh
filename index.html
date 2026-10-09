@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fin">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <title>Viikkoharjoitus 3 - JavaScript</title>
+</head>
+<body>
+    <header>
+    <h1>Sirpa Astala - Sovelluskehityksen kurssi</h1>
+    <h2> Viikotehtävä 3 - JavaScript-harjoitus</h2>
+    <h2>JavaScript-logiikan kokeilu</h2>
+    </header>
+    
+    <main>
+      <p>Avaa selain, paina näppäimistöltä <strong>F12</strong> ja valitse
+<strong>Console</strong> nähdäksesi koodin tulosteet.</p>
+
+<!-- Tämä rivi kytkee JavaScriptin sivuun: -->
+<script src="script.js"></script>
+
+<!-- Buttons -->
+ 
+<p>Miten koodaus sujuu?</p>
+
+<button 
+type="button" 
+onclick='document.getElementById("vastaus").innerHTML = "Hienoa! Koodaus sujuu sinulta hyvin – jatka samaan malliin!"'>Ihan OK</button>
+
+<button 
+type="button" 
+onclick='document.getElementById("vastaus").innerHTML = "Ei hätää! Harjoittelu kuuluu oppimiseen – kokeile rauhassa uudelleen."'>Heikosti</button>
+
+<p id="vastaus"></p>
+
+</main>
+
+    <footer> <br>Tämän sivun on laatinut Sirpa opettajan valmista koodia hyödyntäen</footer>
+
+
+<!-- Viikkotehtävän 3 kommentit -->
+<!-- a-tehtävässä käytetty opettajan antamaa valmista koodia -->
+<!-- Javasripit käsittelee yhtäsuuruusmerkkiä näin:
+  =    => sijoittaa arvon
+  ==   => vertaa arvoja
+  ===  => vertaa arvoa ja tietotyyppiä  -->
+<!-- javaSriptin laskentafunktiossa hyödynnetty sivulla https://www.superage.app/fi/blog/askelpituus-ian-mukaan-normaaliarvot-taulukko/ olevaa
+   askelpituuden taulukkoa. Tiedon luotettavuuteen en ota kantaa, lukuja hyödynnetty esimerkinomaisina. -->
+<!-- Painikkeiden tekstit pyydetty duck.ai:lta. -->
+<!-- En ollut varma, pitäisikö napin suoritus olla .js-tiedostossa vai tässä .html-tiedostossa, tein painikkeen tänne. 
+  Vaikutti yksinkertaisemmalta niin. Lisäksi käsitykseni mukaan komennot ovat JavaScriptiä vaikka ovatkin html-koodin sisällä. -->
+
+</body>
+</html>
